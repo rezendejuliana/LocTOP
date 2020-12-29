@@ -1,0 +1,36 @@
+﻿@model Vidly.ViewModels.ListOfCustomersMovieViewModel
+
+@{
+    ViewBag.Title = "Customers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h2 class="popular">Customers</h2>*@
+
+@if (Model.Customers.Count == 0)
+{
+    <text>There is no customers.</text>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Customer</th>
+                <th>Membership Type</th>
+            </tr>
+        </thead>
+
+        @foreach (var customer in Model.Customers)
+        {
+            <tr>
+                <td>@Html.ActionLink(customer.Name, "Details", new { id = customer.Id })</td>
+                <td>@customer.MembershipType.Name</td>
+            </tr>
+            
+        }
+    </table>
+}
+
+
+@*diretorio dentro, ., fora .. *@

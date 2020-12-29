@@ -1,0 +1,27 @@
+﻿@model Vidly.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<ul>
+    <h2 class="popular">@Model.Name</h2>
+
+</ul>
+
+
+@if (Model.BirthDate.Equals(null))
+{
+    <ul>
+        <li>@Model.MembershipType.Name</li>
+    </ul>
+}
+else
+{
+    <ul>
+        <li>
+            <text>@Model.MembershipType.Name</text></li>
+        <li> <p> @Model.BirthDate.GetValueOrDefault().ToString("dd/MM/yyyy")</p></li> 
+    </ul>
+  }

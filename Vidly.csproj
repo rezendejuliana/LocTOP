@@ -52,6 +52,9 @@
     <Reference Include="Microsoft.OData.Edm, Version=7.8.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.OData.Edm.7.8.1\lib\net45\Microsoft.OData.Edm.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.FakeDb, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Sitecore.FakeDb.2.0.1\lib\net471\Sitecore.FakeDb.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
@@ -256,9 +259,74 @@
     <Compile Include="Migrations\202012291837343_Adding new Movies fields..Designer.cs">
       <DependentUpon>202012291837343_Adding new Movies fields..cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012301452021_changes on model.cs" />
+    <Compile Include="Migrations\202012301452021_changes on model.Designer.cs">
+      <DependentUpon>202012301452021_changes on model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301455571_changes.cs" />
+    <Compile Include="Migrations\202012301455571_changes.Designer.cs">
+      <DependentUpon>202012301455571_changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301500523_changes1.cs" />
+    <Compile Include="Migrations\202012301500523_changes1.Designer.cs">
+      <DependentUpon>202012301500523_changes1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301511130_Adding genre class.cs" />
+    <Compile Include="Migrations\202012301511130_Adding genre class.Designer.cs">
+      <DependentUpon>202012301511130_Adding genre class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301515325_popultate genre.cs" />
+    <Compile Include="Migrations\202012301515325_popultate genre.Designer.cs">
+      <DependentUpon>202012301515325_popultate genre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301520562_changes2.cs" />
+    <Compile Include="Migrations\202012301520562_changes2.Designer.cs">
+      <DependentUpon>202012301520562_changes2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301745492_changes3.cs" />
+    <Compile Include="Migrations\202012301745492_changes3.Designer.cs">
+      <DependentUpon>202012301745492_changes3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301755565_changes on movie.cs" />
+    <Compile Include="Migrations\202012301755565_changes on movie.Designer.cs">
+      <DependentUpon>202012301755565_changes on movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301804374_changes4.cs" />
+    <Compile Include="Migrations\202012301804374_changes4.Designer.cs">
+      <DependentUpon>202012301804374_changes4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301813296_changing genre and movie class.cs" />
+    <Compile Include="Migrations\202012301813296_changing genre and movie class.Designer.cs">
+      <DependentUpon>202012301813296_changing genre and movie class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301830011_changing genre class.cs" />
+    <Compile Include="Migrations\202012301830011_changing genre class.Designer.cs">
+      <DependentUpon>202012301830011_changing genre class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301832226_changing genre classsss.cs" />
+    <Compile Include="Migrations\202012301832226_changing genre classsss.Designer.cs">
+      <DependentUpon>202012301832226_changing genre classsss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301837483_changing type of Id genre.cs" />
+    <Compile Include="Migrations\202012301837483_changing type of Id genre.Designer.cs">
+      <DependentUpon>202012301837483_changing type of Id genre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301854000_changing type of genre fields again.cs" />
+    <Compile Include="Migrations\202012301854000_changing type of genre fields again.Designer.cs">
+      <DependentUpon>202012301854000_changing type of genre fields again.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301911240_changing type of genreId default.cs" />
+    <Compile Include="Migrations\202012301911240_changing type of genreId default.Designer.cs">
+      <DependentUpon>202012301911240_changing type of genreId default.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012301919205_changing type of genreId default and name.cs" />
+    <Compile Include="Migrations\202012301919205_changing type of genreId default and name.Designer.cs">
+      <DependentUpon>202012301919205_changing type of genreId default and name.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -266,7 +334,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\ListOfCustomersMovieViewModel.cs" />
-    <Compile Include="ViewModels\NewCustomerViewModel.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -334,7 +403,8 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
-    <Content Include="Views\Customers\New.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -386,6 +456,54 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012291837343_Adding new Movies fields..resx">
       <DependentUpon>202012291837343_Adding new Movies fields..cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301452021_changes on model.resx">
+      <DependentUpon>202012301452021_changes on model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301455571_changes.resx">
+      <DependentUpon>202012301455571_changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301500523_changes1.resx">
+      <DependentUpon>202012301500523_changes1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301511130_Adding genre class.resx">
+      <DependentUpon>202012301511130_Adding genre class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301515325_popultate genre.resx">
+      <DependentUpon>202012301515325_popultate genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301520562_changes2.resx">
+      <DependentUpon>202012301520562_changes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301745492_changes3.resx">
+      <DependentUpon>202012301745492_changes3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301755565_changes on movie.resx">
+      <DependentUpon>202012301755565_changes on movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301804374_changes4.resx">
+      <DependentUpon>202012301804374_changes4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301813296_changing genre and movie class.resx">
+      <DependentUpon>202012301813296_changing genre and movie class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301830011_changing genre class.resx">
+      <DependentUpon>202012301830011_changing genre class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301832226_changing genre classsss.resx">
+      <DependentUpon>202012301832226_changing genre classsss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301837483_changing type of Id genre.resx">
+      <DependentUpon>202012301837483_changing type of Id genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301854000_changing type of genre fields again.resx">
+      <DependentUpon>202012301854000_changing type of genre fields again.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301911240_changing type of genreId default.resx">
+      <DependentUpon>202012301911240_changing type of genreId default.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012301919205_changing type of genreId default and name.resx">
+      <DependentUpon>202012301919205_changing type of genreId default and name.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

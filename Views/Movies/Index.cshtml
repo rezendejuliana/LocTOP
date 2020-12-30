@@ -4,7 +4,10 @@
     ViewBag.Tittle = "Movies";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@*<h2 class="popular">Movies</h2>*@
+<h2 class="popular">Movies</h2>
+@Html.ActionLink("New Movie", "New", "Movies" , null, new { @class = "btn btn-primary btn-lg" })
+
+<p></p>
 @if (Model.Movie.Count == 0)
 {
     <text>There is no movies.</text>
@@ -22,8 +25,8 @@ else
         @foreach (var movie in Model.Movie)
         {
             <tr>
-                <td>@Html.ActionLink(movie.Name, "Details", new { id = movie.Id })</td>
-                <td>@movie.Genre</td>
+                <td>@Html.ActionLink(movie.Name, "Edit", new { id = movie.Id })</td>
+                <td>@movie.Genre.Name</td>
             </tr>
         }
     </table>

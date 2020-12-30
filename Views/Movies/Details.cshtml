@@ -16,8 +16,8 @@
     <li>
         <text>Genre:@Model.Genre</text>
     </li>
-    <li> <p>Release Date: @Model.ReleaseDate.ToString("MMMM dd, yyyy")</p></li>
-    <li> <p>Date Added: @Model.DateAdded.ToString("MMMM dd, yyyy")</p></li>
+    <li> <p>Release Date: @Model.ReleaseDate?.ToString("MMMM dd, yyyy")</p></li>
+    <li> <p>Date Added: @Model.DateAdded?.ToString("MMMM dd, yyyy")</p></li>
     <li> <p>Number in stock: @Model.NumberInStock</p></li>
 </ul>
 

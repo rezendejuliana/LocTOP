@@ -323,6 +323,22 @@
     <Compile Include="Migrations\202012301919205_changing type of genreId default and name.Designer.cs">
       <DependentUpon>202012301919205_changing type of genreId default and name.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202101041516386_changes on age restriction.cs" />
+    <Compile Include="Migrations\202101041516386_changes on age restriction.Designer.cs">
+      <DependentUpon>202101041516386_changes on age restriction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101041556223_adding constants.cs" />
+    <Compile Include="Migrations\202101041556223_adding constants.Designer.cs">
+      <DependentUpon>202101041556223_adding constants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101041825359_Validation anti forgery token.cs" />
+    <Compile Include="Migrations\202101041825359_Validation anti forgery token.Designer.cs">
+      <DependentUpon>202101041825359_Validation anti forgery token.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101041901376_updating fields in movies and validation.cs" />
+    <Compile Include="Migrations\202101041901376_updating fields in movies and validation.Designer.cs">
+      <DependentUpon>202101041901376_updating fields in movies and validation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -330,6 +346,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -351,6 +368,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -415,10 +435,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
@@ -504,6 +521,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012301919205_changing type of genreId default and name.resx">
       <DependentUpon>202012301919205_changing type of genreId default and name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101041516386_changes on age restriction.resx">
+      <DependentUpon>202101041516386_changes on age restriction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101041556223_adding constants.resx">
+      <DependentUpon>202101041556223_adding constants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101041825359_Validation anti forgery token.resx">
+      <DependentUpon>202101041825359_Validation anti forgery token.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101041901376_updating fields in movies and validation.resx">
+      <DependentUpon>202101041901376_updating fields in movies and validation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

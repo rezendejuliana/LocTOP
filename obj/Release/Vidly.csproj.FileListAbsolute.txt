@@ -330,3 +330,7 @@ C:\Users\Juliana\Desktop\LocTOP\obj\Release\Vidly.Migrations.changingtypeofgenre
 C:\Users\Juliana\Desktop\LocTOP\obj\Release\Vidly.Migrations.changingtypeofgenreIddefault.resources
 C:\Users\Juliana\Desktop\LocTOP\obj\Release\Vidly.Migrations.changingtypeofgenreIddefaultandname.resources
 C:\Users\Juliana\Desktop\LocTOP\obj\Release\Vidly.csprojAssemblyReference.cache
+C:\Users\Juliana\Desktop\LocTOP\obj\Release\Vidly.Migrations.changesonagerestriction.resources
+C:\Users\Juliana\Desktop\LocTOP\obj\Release\Vidly.Migrations.addingconstants.resources
+C:\Users\Juliana\Desktop\LocTOP\obj\Release\Vidly.Migrations.Validationantiforgerytoken.resources
+C:\Users\Juliana\Desktop\LocTOP\obj\Release\Vidly.Migrations.updatingfieldsinmoviesandvalidation.resources
